@@ -12,6 +12,8 @@ source:
     # Taken from https://github.com/microsoft/LightGBM/blob/v4.5.0/build-python.sh#L308-L316
     # except that we don't copy lib_lightgbm.so to SP_DIR
     - use_precompiled.diff
+    # Compatibility fix for Boost 1.86
+    - boost-sha1.diff
 
 build:
   number: 4
